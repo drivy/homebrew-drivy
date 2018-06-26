@@ -20,7 +20,7 @@ class Mydumper < Formula
   depends_on "pkg-config" => :build
   depends_on "sphinx-doc" => :build if build.with? "docs"
   depends_on "glib"
-  depends_on "mysql"
+  depends_on "mysql@5.7"
   depends_on "pcre"
   depends_on "openssl"
   depends_on "zlib"
