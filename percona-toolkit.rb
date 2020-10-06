@@ -22,7 +22,7 @@ class PerconaToolkit < Formula
     sha256 "3f8e07375c1bee4faca1cac8db893ba7e30b1fefc4f1712f61164d067535012b" => :high_sierra
   end
 
-  depends_on "mysql-client"
+  depends_on "mysql-client@5.7"
   depends_on "openssl@1.1"
 
   uses_from_macos "perl"
