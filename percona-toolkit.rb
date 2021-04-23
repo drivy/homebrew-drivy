@@ -1,3 +1,6 @@
+# typed: false
+# frozen_string_literal: true
+
 require "language/perl"
 
 class PerconaToolkit < Formula
@@ -16,10 +19,9 @@ class PerconaToolkit < Formula
   end
 
   bottle do
-    cellar :any
-    sha256 "9cb6acc2c62ea3d71fe9d5974fea8da69141226411a41cab50bd0e490e7fb6ca" => :catalina
-    sha256 "0437a080ee4992e95c9190328cca148cf713e471f0e47e525f591c5e98eca8fb" => :mojave
-    sha256 "3f8e07375c1bee4faca1cac8db893ba7e30b1fefc4f1712f61164d067535012b" => :high_sierra
+    sha256 cellar: :any, catalina:    "9cb6acc2c62ea3d71fe9d5974fea8da69141226411a41cab50bd0e490e7fb6ca"
+    sha256 cellar: :any, mojave:      "0437a080ee4992e95c9190328cca148cf713e471f0e47e525f591c5e98eca8fb"
+    sha256 cellar: :any, high_sierra: "3f8e07375c1bee4faca1cac8db893ba7e30b1fefc4f1712f61164d067535012b"
   end
 
   depends_on "mysql-client@5.7"
